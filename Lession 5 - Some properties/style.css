@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Consolas";
+}
+body {
+  padding: 5rem;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: white;
+  background: darkblue;
+  padding: 14px 30px;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+section {
+  margin-top: 20px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}

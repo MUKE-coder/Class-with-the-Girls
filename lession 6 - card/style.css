@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.logo {
+  float: left;
+}
+.position {
+  float: right;
+}
+
+.card-image img {
+  background: red;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  /* filter: brightness(40%); */
+  /* filter: contrast(200%); */
+}
+.icon {
+  width: 30px;
+}
+.card {
+  border: 1px solid black;
+  width: 200px;
+}

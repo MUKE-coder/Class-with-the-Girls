@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: black;
+  padding: 1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+header input[type=checkbox]:checked ~ nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 800px) {
+  header nav {
+    display: none;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    background-color: red;
+  }
+}
+header nav a {
+  color: white;
+}
+header nav button {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+header nav button .menu {
+  position: absolute;
+  background-color: aqua;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header nav button .menu a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header nav button .menu a:hover {
+  background-color: black;
+}
+header nav button:hover .menu {
+  display: block;
+}
+
+label {
+  color: whitesmoke;
+}
+
+.box {
+  background-color: #0f172a;
+}

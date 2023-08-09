@@ -1,0 +1,36 @@
+$default-font: "Poppins";
+$themeColor: blue;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  font-family: $default-font;
+  background-color: red;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  gap: 1rem;
+  @media (max-width: 890px) {
+    padding: 3rem;
+    @media (max-width: 300px) {
+      padding: 1rem;
+    }
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    &:hover {
+      background-color: $themeColor;
+    }
+  }
+}

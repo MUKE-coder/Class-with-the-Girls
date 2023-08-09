@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: 100vh;
+  color: white;
+  padding: 5rem;
+}
+.solid-bg {
+  background: darkblue;
+}
+.two-color-linear-grad {
+  background: linear-gradient();
+}

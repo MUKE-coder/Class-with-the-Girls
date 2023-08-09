@@ -1,0 +1,71 @@
+header {
+  background-color: black;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  input[type="checkbox"] {
+    appearance: none;
+  }
+  input[type="checkbox"]:checked ~ nav {
+    display: flex;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: 800px) {
+      display: none;
+      position: fixed;
+      flex-direction: column;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      background-color: red;
+    }
+    a {
+      color: white;
+    }
+    button {
+      display: inline-block;
+      position: relative;
+      background-color: transparent;
+      color: white;
+      padding: 13px;
+      transition: all 0.5s;
+      border: none;
+      cursor: pointer;
+      .menu {
+        position: absolute;
+        background-color: aqua;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+
+        transition: all 0.5s;
+        a {
+          display: block;
+          padding: 1rem;
+          // background-color: black;
+          color: white;
+          transition: all 0.5s;
+          &:hover {
+            background-color: black;
+          }
+        }
+      }
+      &:hover {
+        .menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+label {
+  color: whitesmoke;
+}

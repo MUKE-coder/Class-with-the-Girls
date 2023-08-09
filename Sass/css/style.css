@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-section {
+  font-family: "Poppins";
+  background-color: red;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 10rem;
+  gap: 1rem;
+}
+@media (max-width: 890px) {
+  .hero-section {
+    padding: 3rem;
+  }
+}
+@media (max-width: 890px) and (max-width: 300px) {
+  .hero-section {
+    padding: 1rem;
+  }
+}
+.hero-section button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+}
+.hero-section button:hover {
+  background-color: blue;
+}

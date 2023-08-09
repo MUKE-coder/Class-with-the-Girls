@@ -1,0 +1,67 @@
+/* BROWSER RESET */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas";
+}
+hr {
+  width: 50%;
+  margin: 10px auto;
+}
+.m-top-medium {
+  margin-top: 20px;
+}
+p {
+  font-size: 18px;
+  padding: 10px;
+}
+.dotted {
+  border: 1px dotted blue;
+}
+.section-heading {
+  color: blue;
+  font-size: 32px;
+}
+section {
+  margin: 30px 60px;
+  padding: 30px 60px;
+  text-align: center;
+}
+.bio-section {
+  background-color: black;
+}
+.white-text {
+  color: white;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+.icon:hover {
+  transform: scale(0.8);
+}
+.album-image {
+  width: 30%;
+  transition: all 0.8s;
+  margin-right: 60px;
+}
+.with-irad {
+  border: 5px solid black;
+  transform: rotate(10deg);
+}
+.with-irad:hover {
+  transform: rotate(-10deg);
+}
+.change-radius {
+  border: 5px solid blue;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.change-radius:hover {
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}

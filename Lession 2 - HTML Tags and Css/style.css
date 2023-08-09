@@ -1,0 +1,52 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  background-color: green;
+  color: white;
+}
+a {
+  color: red;
+}
+
+/* Ids are selected using # */
+#ordered {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-decoration: underline;
+}
+#relative {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+/* Classes are selected using a dot */
+.external-link {
+  background-color: brown;
+  color: white;
+}
+.internal-link {
+  border: 1px solid brown;
+  color: brown;
+}
+.external-link,
+.internal-link {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.link {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* DRY => DON'T REPEAT YOUR SELF */
+.laptop-image {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  border-radius: 50%;
+  object-fit: cover;
+}

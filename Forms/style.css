@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+body {
+  background: linear-gradient(to right, darkblue, red);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registration-card {
+  background-color: white;
+  padding: 2rem;
+  width: 500px;
+  transition: all 0.5s ease;
+}
+.registration-card:hover {
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px;
+}
+h2 {
+  text-align: center;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+input,
+select {
+  padding: 12px 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+input:focus {
+  border: 2px solid purple;
+  outline: none;
+}
+button {
+  padding: 15px 20px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+}
+
+select {
+  padding: 12px 30px;
+  border-radius: 0;
+}
+option {
+  font-size: 18px;
+}
+textarea {
+  padding: 12px 30px;
+  resize: none;
+}

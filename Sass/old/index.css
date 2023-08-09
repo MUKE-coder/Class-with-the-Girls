@@ -1,0 +1,63 @@
+:root {
+  --themeColor: yellow;
+  --themeColorDark: darkblue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.boxes {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+}
+.box {
+  border: 1px solid white;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #ccc;
+  padding: 3rem 5rem;
+}
+section:nth-child(1) {
+  background-color: var(--themeColor);
+}
+section:nth-child(2) {
+  background-color: greenyellow;
+}
+section:nth-child(3) {
+  background-color: var(--themeColorDark);
+}
+
+.section-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 530px) {
+  section {
+    padding: 2rem 3rem;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  section {
+    padding: 1.5rem;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 260px) {
+  section {
+    padding: 1.5rem;
+  }
+  .section-heading {
+    font-size: 1.5rem;
+  }
+}

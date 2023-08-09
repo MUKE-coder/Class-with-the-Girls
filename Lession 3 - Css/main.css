@@ -1,0 +1,58 @@
+/* browser reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  color: white;
+  background-color: black;
+  width: 50%;
+}
+.bio-data {
+  background-color: darkblue;
+}
+.profile {
+  background-color: darkred;
+}
+.education {
+  background-color: darkmagenta;
+}
+.website-image {
+  width: 300px;
+}
+.download-link {
+  background-color: bisque;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.icon {
+  width: 30px;
+}
+.box {
+  width: 300px;
+  border: 5px dotted red;
+  padding: 30px 50px;
+  /* padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px; */
+}
+.hire-me {
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+body {
+  padding: 3rem;
+  text-align: center;
+}
+hr {
+  width: 600px;
+}
+.name {
+  color: green;
+}
+.text-blue {
+  color: blue;
+}

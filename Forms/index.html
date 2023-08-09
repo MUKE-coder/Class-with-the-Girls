@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="registration-card">
+      <h2>Register</h2>
+      <form>
+        <div class="form-field">
+          <label for="username">User Name</label>
+          <input type="text" placeholder="Enter your name eg. John" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter your password ******" />
+        </div>
+        <div class="form-field">
+          <label for="date">Date</label>
+          <input type="date" />
+        </div>
+        <div class="form-field">
+          <label for="gender">Gender</label>
+          <select>
+            <option value="">Please select</option>
+            <option>Female</option>
+            <option>Male</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="comments">Comments</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-fields">
+          <label for="bloodtype">What is your blood type? </label>
+          <input type="radio" value="A" name="bloodtype" />A
+          <input type="radio" value="B" name="bloodtype" />B
+          <input type="radio" value="O" name="bloodtype" />O
+          <input type="radio" value="AB" name="bloodtype" />AB
+        </div>
+        <div class="form-field">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
