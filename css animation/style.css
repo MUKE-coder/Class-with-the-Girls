@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.banner {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+.banner:hover {
+  animation: pulse 1s ease infinite;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: red;
+  /* animation: stretch 2s ease infinite; */
+}
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid gainsboro;
+  border-top: 3px solid red;
+  animation: spin 3s linear infinite forwards;
+  position: relative;
+}
+
+.ball::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 3px solid transparent;
+  border-top: 3px solid red;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-container {
+  border: 3px solid red;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+.content {
+  position: absolute;
+  left: 10%;
+  color: white;
+  font-size: 3rem;
+  top: 30%;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes stretch {
+  from {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top: 3px solid red;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 3px solid blue;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    top: 3%;
+    transform: scale(1.05) rotate(1deg);
+  }
+}
