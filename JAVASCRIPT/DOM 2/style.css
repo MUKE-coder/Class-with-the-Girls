@@ -1,0 +1,25 @@
+.winning-text {
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+button {
+  margin-top: 3rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+}
+.circle {
+  border-radius: 50%;
+}
+.rectangle {
+  width: 400px;
+}
