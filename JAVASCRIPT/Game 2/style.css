@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: plum;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.question {
+  padding: 1rem 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+li {
+  padding: 0.8rem 1rem;
+  background-color: blanchedalmond;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 5px;
+}
+button {
+  padding: 0.6rem 3rem;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}

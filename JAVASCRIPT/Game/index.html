@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="message"></div>
+    <input type="text" placeholder="Enter Player Name" />
+    <button>Add Name</button>
+    <div class="game-container">
+      <div class="card player player-1 currentPlayer">
+        <div class="header">
+          <h2>Player1 : <span class="playerName">JB WEB DEV</span></h2>
+          <hr />
+        </div>
+        <div class="scores">
+          <div class="score-card current">
+            <h2>Current Score</h2>
+            <h2 class="score current-score">0</h2>
+          </div>
+
+          <div class="score-card overall">
+            <h2>Overall Score</h2>
+            <h2 class="score overall-score">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="card dice">
+        <div class="dice-image" id="playerOneDiceImage">
+          <img src="./images/d-0.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card player player-2">
+        <div class="header">
+          <h2>Player2 : <span class="playerName">JB WEB DEV</span></h2>
+          <hr />
+        </div>
+        <div class="scores">
+          <div class="score-card current">
+            <h2>Current Score</h2>
+            <h2 class="score current-score">0</h2>
+          </div>
+
+          <div class="score-card overall">
+            <h2>Overall Score</h2>
+            <h2 class="score overall-score">0</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game-controls">
+      <button class="resetBtn">Reset</button>
+      <button class="playBtn">Play</button>
+      <button class="passBtn">Pass</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
