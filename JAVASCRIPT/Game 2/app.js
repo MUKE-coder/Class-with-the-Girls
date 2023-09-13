@@ -1,5 +1,5 @@
 const questionContainer = document.querySelector(".question-container");
-console.log(questionContainer);
+// console.log(questionContainer);
 const nextBtn = document.querySelector(".nextBtn");
 // const question = {
 //   quiz: "What is 2+ 4 ?",
@@ -21,7 +21,7 @@ const questionBank = [
       C: 22,
       D: 6,
     },
-    answer: 4,
+    answer: 6,
   },
   {
     quiz: "What is 200 * 4 ?",
@@ -46,6 +46,7 @@ const questionBank = [
 ];
 let questionIndex = 0;
 let questionNumber = 0;
+let score = 0;
 //display question on pageload
 renderNewQuestion();
 
@@ -56,20 +57,20 @@ nextBtn.addEventListener("click", renderNewQuestion);
 // setTimeout(() => {
 //   renderNewQuestion();
 // }, 3000);
-setInterval(() => {
-  renderNewQuestion();
-}, displayDuration);
+// setInterval(() => {
+//   renderNewQuestion();
+// }, displayDuration);
 
-console.log(questionBank.length);
+// console.log(questionBank.length);
 
 function renderNewQuestion() {
   if (questionNumber === 5) {
     alert("Game Over");
   }
   questionNumber++;
-  console.log(questionNumber);
+  // console.log(questionNumber);
   questionIndex = Math.floor(Math.random() * questionBank.length);
-  console.log(questionIndex);
+  // console.log(questionIndex);
   questionContainer.innerHTML = `
 <h2 class="question" id="question">${questionBank[questionIndex].quiz}</h2>
     <ul class="solution">
@@ -81,5 +82,38 @@ function renderNewQuestion() {
 `;
 }
 
+const numbers = [1, 2, 3, 4, 5];
+//ForEach Method
+// numbers.forEach((number) => {
+//   console.log(number * 2);
+// });
+const squares = numbers.map((number) => {
+  return number * 2;
+});
+// console.log(squares);
+const openAcctBtns = document.querySelectorAll("#openAccount");
+openAcctBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log(questionIndex);
+  });
+});
+
 const options = document.querySelectorAll("li");
 console.log(options);
+options.forEach((option) => {
+  option.addEventListener("click", function () {
+    const optionContent = option.textContent.split(" ")[1];
+    const currentQuestion = questionBank[questionIndex];
+    const answer = currentQuestion.answer;
+    console.log(answer, optionContent);
+    if (answer == optionContent) {
+      console.log("its the correct answer");
+      score++;
+      option.style.backgroundColor = "green";
+      console.log(score);
+      renderNewQuestion();
+    } else {
+      renderNewQuestion();
+    }
+  });
+});
