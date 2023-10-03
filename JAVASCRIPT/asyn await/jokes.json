@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Why did the scarecrow win an award?",
+    "image": "image1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Parallel lines have so much in common.",
+    "image": "image2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "I'm reading a book on anti-gravity.",
+    "image": "image3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "I used to be a baker, but I couldn't make enough dough.",
+    "image": "image4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Why don't skeletons fight each other?",
+    "image": "image5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "I'm on a seafood diet. I see food, and I eat it.",
+    "image": "image6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "I'm friends with all electricians. We have great current connections.",
+    "image": "image7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "What do you call a bear with no teeth?",
+    "image": "image8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+    "image": "image9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Why did the math book look sad?",
+    "image": "image10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "I used to play piano by ear, but now I use my hands.",
+    "image": "image11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "I used to be a baker, but I couldn't make enough dough.",
+    "image": "image12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Why did the bicycle fall over?",
+    "image": "image13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "I'm writing a book. I've got the page numbers done.",
+    "image": "image14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "I'm friends with all vegetarians. We have great plant-based connections.",
+    "image": "image15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Why don't scientists trust atoms?",
+    "image": "image16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "I'm reading a book on anti-gravity.",
+    "image": "image17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+    "image": "image18.jpg"
+  },
+  {
+    "id": 19,
+    "title": "What did one wall say to the other wall?",
+    "image": "image19.jpg"
+  },
+  {
+    "id": 20,
+    "title": "I used to play piano by ear, but now I use my hands.",
+    "image": "image20.jpg"
+  }
+]
