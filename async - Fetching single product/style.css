@@ -69,3 +69,41 @@ a {
   background-color: pink;
   text-align: center;
 }
+
+.category-list {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2rem;
+}
+.category {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.category h2 {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.435);
+  padding: 5px 15px;
+}
+
+header {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+header img {
+  height: 100%;
+}

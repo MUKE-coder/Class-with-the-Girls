@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "smartphones",
+    "image": "https://i.dummyjson.com/data/products/2/1.jpg",
+    "description": "This is a description"
+  },
+  {
+    "id": 2,
+    "title": "laptops",
+    "image": "https://i.dummyjson.com/data/products/6/2.jpg",
+    "description": "This is a description"
+  },
+  {
+    "id": 3,
+    "title": "fragrances",
+    "image": "https://i.dummyjson.com/data/products/11/2.jpg",
+    "description": "This is a description"
+  }
+]
